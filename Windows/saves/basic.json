@@ -2,7 +2,7 @@
     "configs": {
         "topTaskBar": false,
         "sound": false,
-        "wallpaper": "./res/img/wallpapers/bg1.jpg",
+        "wallpaper": "./res/img/wallpapers/16.jpg", 
         "wallpaperBlur": false,
         "wallpaperSlide": false,
         "wallpaperSlideRandom": true,
@@ -220,7 +220,7 @@
             "desc": "个人博客",
             "icon": {
                 "type": "img",
-                "content": "https://s1.ax1x.com/2020/05/17/YR20js.jpg",
+                "content": "https://oss-gulimall-oss.oss-cn-beijing.aliyuncs.com/myweb/%E5%BE%AE%E4%BF%A1%E5%A4%B4%E5%83%8F.jpg",
                 "bg": "#6b96cf"
             },
             "openMode": "normal",
@@ -233,7 +233,7 @@
                 "y": "y*0.1"
             },
             "version": "1.0.0",
-            "poweredBy": "Luckey",
+            "poweredBy": "LZM",
             "resizable": true,
             "single": true,
             "size": {
@@ -241,7 +241,7 @@
                 "width": "x*0.8"
             },
             "title": "个人博客",
-            "url": "http://www.luckyzmj.cn",
+            "url": "https://blog.csdn.net/weixin_46345400?spm=1000.2115.3001.5343",
             "customTile": "",
             "urlRandomToken": true
         },
