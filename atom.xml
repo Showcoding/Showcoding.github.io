@@ -2,17 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Land and Sea</title>
   
-  <subtitle>敏敏和楚楚</subtitle>
+  <subtitle>敏敏和楚楚的网站</subtitle>
   <link href="https://showcoding.github.io/atom.xml" rel="self"/>
   
   <link href="https://showcoding.github.io/"/>
   <updated>2021-12-07T14:52:14.104Z</updated>
   <id>https://showcoding.github.io/</id>
-  
-  <author>
-    <name>廖钟敏</name>
-    
-  </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
