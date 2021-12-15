@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="放松一下, Land and Sea">
+    <meta name="keywords" content="spring, Land and Sea">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>放松一下 | Land and Sea</title>
+    <title>spring | Land and Sea</title>
 
     <link rel="icon" type="image/png" href="https://oss-gulimall-oss.oss-cn-beijing.aliyuncs.com/%E6%A5%9A%E6%A5%9A">
 
@@ -510,12 +510,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Showcoding/Myimages@main/galleries/臭美/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021245.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">放松一下</h1>
+                    <h1 class="description center-align post-title">spring</h1>
                 </div>
             </div>
         </div>
@@ -634,12 +634,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/spring-Ioc-Aop/">
+                                <span class="chip bg-color">spring Ioc Aop</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                博客篇
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -648,21 +661,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-10
+                    2021-12-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-04
+                    2021-12-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6
+                    545
                 </div>
                 
 
@@ -692,8 +705,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="影音资源共享"><a href="#影音资源共享" class="headerlink" title="影音资源共享"></a>影音资源共享</h1>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=2979186&amp;cid=4667585&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div>
+                <h3 id="一-Spring是什么"><a href="#一-Spring是什么" class="headerlink" title="一.Spring是什么"></a>一.Spring是什么</h3><p>Spring是一种轻量级的Java开发框架，其核心是IOC(控制反转)和AOP(面向切面编程)。</p>
+<p>那么我将逐一分析“轻量级”“框架”“IOC”“AOP”的含义。</p>
+<p>轻量级：对于Spring其大小和开销而言是轻量的</p>
+<p>框架：Spring把很多组件如Strus和Hibernate组合起来，使得开发大大简化</p>
+<p>IOC：管理着javabean对象的配置和生命周期，依赖注解，把创建对象的控制权交由IOC容器管理</p>
+<p>AOP：把一些与业务逻辑无关的系统服务(日志，事务，认证)进行了封装，大大减少重复代码</p>
+<h3 id="二-IOC容器"><a href="#二-IOC容器" class="headerlink" title="二.IOC容器"></a>二.IOC容器</h3><hr>
+<p>IOC容器管理javabean对象的配置和什么周期以及依赖注入的一些注解。没有IOC容器的情况下，对象由我们程序员自己创建，并且自己获取依赖，这时候的控制权在程序员手里。还不明白的话，举个例子：两个对象A，B，A，B相互依赖，当我们创建A时，由于A，B相互依赖，这时候不得不创建B。但是有了IOC之后我们只需要创建A，IOC容器会自动把A中需要B的依赖注入。这就是体现出“控制反转”。</p>
+<h3 id="三-AOP"><a href="#三-AOP" class="headerlink" title="三.AOP"></a>三.AOP</h3><hr>
+<p>系统由很多组件组成的，每个组件有着不同功能，但是每个组件有时候需要相互使用，对于OOP而言，它只能定义上下之间的关系，不能定义左右之间的关系。可能这里不太好理解，举个简单的例子，有两个功能模块分别是订单和商品模块，对于日志这个功能，在OOP的情况下，它是分布在每个模块的，也就是说分散在订单和商品模块中，这样的话有很多重复的代码，那么怎么解决呢？这时候就需要用到AOP的思想，把日志封装，作为一个横切面，这样就能贯穿所有模块。AOP增强了某些或者某个对象的功能，而且使得代码大大简化。下面的图有助于理解和比较<br><img src="https://img-blog.csdnimg.cn/4a6c15d7d2394f9fb999965daf00fae5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAI0hhc2hNYXAj,size_20,color_FFFFFF,t_70,g_se,x_16"></p>
+<p>​</p>
 
                 
             </div>
@@ -720,7 +742,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://showcoding.github.io/List/index.html">https://showcoding.github.io/List/index.html</a>
+                    <a href="https://showcoding.github.io/posts/6b3e1469.html">https://showcoding.github.io/posts/6b3e1469.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -757,7 +779,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/spring-Ioc-Aop/">
+                                    <span class="chip bg-color">spring Ioc Aop</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1232,13 +1258,12 @@ new Valine({
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/List/index.html">
+                <a href="/posts/6b3e1469.html">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021245.jpg" class="responsive-img" alt="spring">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Showcoding/Myimages@main/galleries/臭美/12.jpg" class="responsive-img" alt="放松一下">
-                        
-                        <span class="card-title">放松一下</span>
+                        <span class="card-title">spring</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1249,17 +1274,29 @@ new Valine({
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-08-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-15
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            廖钟敏
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                    博客篇
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/spring-Ioc-Aop/">
+                        <span class="chip bg-color">spring Ioc Aop</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1267,37 +1304,47 @@ new Valine({
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/List/index.html">
+                <a href="/posts/1218072f.html">
                     <div class="card-image">
                         
+                        <img src="https://oss-gulimall-oss.oss-cn-beijing.aliyuncs.com/myweb/15.jpg" class="responsive-img" alt="好戏要开始啦">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Showcoding/Myimages@main/galleries/臭美/12.jpg" class="responsive-img" alt="放松一下">
-                        
-                        <span class="card-title">放松一下</span>
+                        <span class="card-title">好戏要开始啦</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            请宝子准备好纸巾
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-08-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-07
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            廖钟敏
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%88%91%E5%92%8C%E6%A5%9A%E6%A5%9A/" class="post-category">
+                                    我和楚楚
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Start/">
+                        <span class="chip bg-color">Start</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
