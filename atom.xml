@@ -6,7 +6,7 @@
   <link href="https://showcoding.github.io/atom.xml" rel="self"/>
   
   <link href="https://showcoding.github.io/"/>
-  <updated>2021-12-15T19:14:20.020Z</updated>
+  <updated>2021-12-19T11:19:06.707Z</updated>
   <id>https://showcoding.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://showcoding.github.io/posts/6b3e1469.html"/>
     <id>https://showcoding.github.io/posts/6b3e1469.html</id>
     <published>2021-12-15T18:35:21.000Z</published>
-    <updated>2021-12-15T19:14:20.020Z</updated>
+    <updated>2021-12-19T11:19:06.707Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一-Spring是什么"><a href="#一-Spring是什么" class="headerlink" title="一.Spring是什么"></a>一.Spring是什么</h3><p>Spring是一种轻量级的Java开发框架，其核心是IOC(控制反转)和AOP(面向切面编程)。</p><p>那么我将逐一分析“轻量级”“框架”“IOC”“AOP”的含义。</p><p>轻量级：对于Spring其大小和开销而言是轻量的</p><p>框架：Spring把很多组件如Strus和Hibernate组合起来，使得开发大大简化</p><p>IOC：管理着javabean对象的配置和生命周期，依赖注解，把创建对象的控制权交由IOC容器管理</p><p>AOP：把一些与业务逻辑无关的系统服务(日志，事务，认证)进行了封装，大大减少重复代码</p><h3 id="二-IOC容器"><a href="#二-IOC容器" class="headerlink" title="二.IOC容器"></a>二.IOC容器</h3><hr><p>IOC容器管理javabean对象的配置和什么周期以及依赖注入的一些注解。没有IOC容器的情况下，对象由我们程序员自己创建，并且自己获取依赖，这时候的控制权在程序员手里。还不明白的话，举个例子：两个对象A，B，A，B相互依赖，当我们创建A时，由于A，B相互依赖，这时候不得不创建B。但是有了IOC之后我们只需要创建A，IOC容器会自动把A中需要B的依赖注入。这就是体现出“控制反转”。</p><h3 id="三-AOP"><a href="#三-AOP" class="headerlink" title="三.AOP"></a>三.AOP</h3><hr><p>系统由很多组件组成的，每个组件有着不同功能，但是每个组件有时候需要相互使用，对于OOP而言，它只能定义上下之间的关系，不能定义左右之间的关系。可能这里不太好理解，举个简单的例子，有两个功能模块分别是订单和商品模块，对于日志这个功能，在OOP的情况下，它是分布在每个模块的，也就是说分散在订单和商品模块中，这样的话有很多重复的代码，那么怎么解决呢？这时候就需要用到AOP的思想，把日志封装，作为一个横切面，这样就能贯穿所有模块。AOP增强了某些或者某个对象的功能，而且使得代码大大简化。下面的图有助于理解和比较<br><img src="https://img-blog.csdnimg.cn/4a6c15d7d2394f9fb999965daf00fae5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAI0hhc2hNYXAj,size_20,color_FFFFFF,t_70,g_se,x_16"></p><p>​</p>]]></content>
     
